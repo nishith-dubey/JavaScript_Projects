@@ -90,3 +90,46 @@ input::placeholder {
 .eqbtn:hover {
     background-color: rgb(177, 60, 2);
 }
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .outermost {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .display {
+        height: auto;
+        width: 100%;
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .keypad {
+        height: auto;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+    .btns {
+        width: 20%;
+        height: 60px;
+        font-size: 24px;
+        margin: 5px 0;
+    }
+
+    .eqbtn {
+        width: 90%;
+        height: 60px;
+        font-size: 24px;
+        margin: 10px 0;
+    }
+}
