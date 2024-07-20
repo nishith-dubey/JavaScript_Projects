@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <main class="outermost">
+        <section class="display"></section>
+        <section class="keypad">
+
+            <button class="btns" onclick="
+                x = '';
+                update.innerText = '';">AC</button>
+            <button class="btns" onclick="
+                x = x - (x%10);
+                x = x / 10;
+                update.innerText = x;">C</button>
+            <button class="btns" onclick="x+='+';
+                    update.innerText = x;">+</button>
+            <button class="btns" onclick="x+='-';
+                update.innerText = x;">-</button>
+            <button class="btns" onclick="x+='1';
+                update.innerText = x;
+                console.log(x)">1</button>
+            <button class="btns" onclick="x+='2';
+                update.innerText = x;
+                console.log(x)">2</button>
+            <button class="btns" onclick="x+='3';
+                update.innerText = x;">3</button>
+            <button class="btns" onclick="x+='/';
+                    update.innerText = x;">/</button>
+            <button class="btns" onclick="x+='4';
+                    update.innerText = x;">4</button>
+            <button class="btns" onclick="x+='5';
+                        update.innerText = x;">5</button>
+            <button class="btns" onclick="x+='6';
+                update.innerText = x;">6</button>
+            <button class="btns" onclick="x+='*';
+                    update.innerText = x;">*</button>
+            <button class="btns" onclick="x+='7';
+                update.innerText = x;">7</button>
+            <button class="btns" onclick="x+='8';
+                update.innerText = x;">8</button>
+            <button class="btns" onclick="x+='9';
+                update.innerText = x;">9</button>
+            <button class="btns" onclick="x+='.';
+                update.innerText = x;">.</button>
+                <button class="btns" onclick="x+='0';
+                    update.innerText = x;">0</button>
+            <!-- most imp -->
+            <button class="btns eqbtn" onclick="
+                let result=eval(x);
+                update.innerText = result;">=</button>
+
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
